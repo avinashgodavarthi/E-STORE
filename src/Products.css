@@ -1,0 +1,276 @@
+/* ===============================
+   GLOBAL STYLES
+=============================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  scroll-behavior: smooth;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+.header {
+  background: #1e293b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 80px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.search-box {
+  width: 300px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-box:focus {
+  width: 340px;
+  box-shadow: 0 0 10px rgba(93, 187, 255, 0.6);
+}
+
+/* ===============================
+   SECTION TITLES
+=============================== */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* ===============================
+   PRODUCT GRID
+=============================== */
+.products-section {
+  padding: 40px 0;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 80px 60px 80px;
+  justify-items: center;
+  align-items: start;
+  margin-top: 2200px;
+}
+
+/* Individual product cards */
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 260px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #0f172a;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   CART SECTION
+=============================== */
+.cart-section,
+.orders-section {
+  padding: 30px 80px;
+}
+
+.cart-item,
+.order-item {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cart-item img,
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 20px;
+  border-radius: 8px;
+  background: #0f172a;
+  padding: 5px;
+}
+
+.cart-details h4 {
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.cart-details p {
+  color: #22d3ee;
+  margin: 4px 0;
+}
+
+/* ===============================
+   QUANTITY CONTROLS
+=============================== */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity-controls button:hover {
+  background: #0ea5e9;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ===============================
+   PAYMENT METHOD
+=============================== */
+.payment-method {
+  margin: 10px 0;
+}
+
+.payment-method label {
+  margin-right: 10px;
+  color: #94a3b8;
+}
+
+.payment-method select {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #0f172a;
+  color: white;
+  border: 1px solid #38bdf8;
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+.add-btn,
+.buy-btn,
+.remove-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.add-btn {
+  background: #3b82f6;
+}
+
+.add-btn:hover {
+  background: #2563eb;
+}
+
+.buy-btn {
+  background: #22c55e;
+}
+
+.buy-btn:hover {
+  background: #16a34a;
+}
+
+.remove-btn {
+  background: #ef4444;
+  margin-left: auto;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+.footer {
+  background: #1e293b;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-top: 1px solid #334155;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}

@@ -1,0 +1,142 @@
+/* ===========================
+   Global Styles
+=========================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #243447, #141e30);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   Signup Container
+=========================== */
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ===========================
+   Signup Card
+=========================== */
+.signup-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.signup-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===========================
+   Title
+=========================== */
+.signup-card h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* ===========================
+   Input Fields
+=========================== */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+
+.input-group input {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #b5b5b5;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #5dbbff;
+}
+
+/* ===========================
+   Signup Button
+=========================== */
+.signup-btn {
+  width: 100%;
+  background: #5dbbff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signup-btn:hover {
+  background: #3ca6f6;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Login Link
+=========================== */
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #5dbbff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 30px 25px;
+  }
+
+  .signup-card h1 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background: #2c3e50;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container to hold both title and button */
+.div {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styling */
+.title {
+  color: white;
+  text-align: center;
+  font-size: 130px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Button positioned at top-right */
+.btn {
+  position: absolute;
+  top: -230px;
+  right: -220px;
+  background-color: #6e8efb;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover{
+  color: black;
+  background-color: white;
+}
+
